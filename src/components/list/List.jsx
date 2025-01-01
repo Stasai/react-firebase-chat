@@ -1,8 +1,13 @@
+import ChatList from "./chatList/chatList"
 import "./list.css"
+import UserInfo from "./userInfo/UserInfo"
 
 const List = () => {
     return (
-        <div className="">List</div>
+        <div className="list">
+            <UserInfo />
+            <ChatList />
+        </div>
     )
 }
 
