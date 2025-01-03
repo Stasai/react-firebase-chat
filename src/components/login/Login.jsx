@@ -16,11 +16,16 @@ const Login = () => {
         } 
     }
 
+    const handleLogin = e => {
+        e.preventDefault()
+        
+    }
+
     return (
         <div className="login">
             <div className="item">
                 <h2>Welcome back,</h2>
-                <form>
+                <form onSubmit={handleLogin}>
                     <input type="text" name="email" placeholder="Email" />
                     <input type="password" name="password" placeholder="Password" />
                     <button>Sign In</button>
